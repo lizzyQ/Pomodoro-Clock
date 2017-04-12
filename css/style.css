@@ -1,0 +1,106 @@
+body{
+  background:#ffd6d5;
+}
+h1{
+  color:#f8b9be;
+  text-align:center;
+}
+.clock{
+  width:350px;
+  height:350px;
+  border:25px solid #f8b9be;
+  border-radius:50%;
+  margin:0 auto 10px auto;
+  position:relative;
+}
+.clock:before{
+  content:"";
+  width:365px;
+  height:365px;
+  border:12px solid #f7d7d9;
+  border-radius:50%;
+  position:absolute;
+  top:-19px;
+  left:-19px;
+} 
+.spinner{
+  width:388px;
+  height:388px;
+  border-radius:50%;
+  position:absolute;
+  top:-19px;
+  left:-19px;
+}
+ svg.dotted{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  stroke: #ff6d6d; 
+  stroke-width: 12px;
+  stroke-dasharray:30 3;
+  stroke-dashoffset:50;
+  fill: none;
+}
+.overlap{
+  stroke: #f7d7d9; 
+  stroke-width: 12px;
+  -ms-transform: rotate(270deg) scaleY(-1);
+  -ms-transform-origin: 50% 50%; 
+  -webkit-transform: rotate(270deg) scaleY(-1);
+  -webkit-transform-origin: 50% 50%;
+  transform: rotate(270deg) scaleY(-1);
+  transform-origin: 50% 50%;
+  stroke-dasharray:1500;                              
+  fill: none;
+}
+.timer{
+  position:absolute;
+  top:100px;
+  left:30px;
+  font-size:6.5rem;
+  font-weight:bolder;
+  letter-spacing:8px;
+  color:#f74d61;
+}
+.text{
+  position:absolute;
+  bottom:66px;
+  left:65px;
+  font-size:2.5rem;
+  color:#f8b9be;
+}
+.control-panel{
+  width:440px;
+  margin:60px auto 0 auto;
+  text-align:center;
+}
+.session, 
+.break{
+  display:inline-block;
+  padding:0 15px;
+}
+.session-text,
+.break-text{
+  display:inline-block;
+  font-size:2.2rem;
+  color:#f74d61;
+  vertical-align: base-line;
+}
+.control-panel button{
+  display:inline-block;
+  color:#ff6d6d;
+  font-size: 2.5rem;
+  background:transparent;
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+}
+button:focus{
+  outline:none;
+}
+.reset,
+.stop{
+  padding:0 18px;
+}

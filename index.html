@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+      <h1>Pomodoro Clock</h1>
+      <div class ="clock" id="onoff">
+        <div class="timer" id="timer">25:00</div>
+            <div class="text" id="text">Click to start</div>
+            <div class="spinner">
+                <svg class="dotted">
+                    <circle cx="50%" cy="50%" r="188" />
+                    <circle id="anima" class="overlap" cx="50%" cy="50%" r="188" />
+                </svg>
+            </div>
+      </div>
+      <div class="control-panel">
+        <div class="session">
+          <button class="session-control" id="session-minus">&ominus;</button>
+          <div class="session-text" id="session-text">25</div>
+          <button class="session-control" id="session-plus">&oplus;</button>
+        </div>
+        <div class="break">
+          <button class="break-control" id="break-minus">&ominus;</button>
+          <div class="break-text" id="break-text">5</div>
+          <button class="break-control" id="break-plus">&oplus;</button>
+        </div>
+        <button class="reset" style="font-size:2rem;" id="reset">&orarr;</button>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
